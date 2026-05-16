@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defense Strike - City Defense Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏙️ DEFENSE STRIKE 🏙️</h1>
+            <div class="stats">
+                <div class="stat">
+                    <span>Score:</span>
+                    <span id="score">0</span>
+                </div>
+                <div class="stat">
+                    <span>Health:</span>
+                    <span id="health">100</span>
+                </div>
+                <div class="stat">
+                    <span>Wave:</span>
+                    <span id="wave">1</span>
+                </div>
+                <div class="stat">
+                    <span>Weapon:</span>
+                    <span id="weapon">Laser</span>
+                </div>
+            </div>
+        </div>
+
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+
+        <div class="game-info">
+            <div id="gameStatus">🎮 Game Started! Defend the city!</div>
+            <div class="controls-info">
+                <p id="controls-desktop">⌨️ DESKTOP: Arrow Keys or A/D to Move | SPACE to Shoot</p>
+                <p id="controls-mobile">📱 MOBILE: Swipe Left/Right to Move | Tap to Shoot</p>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button id="startBtn" class="btn btn-green">START GAME</button>
+            <button id="pauseBtn" class="btn btn-yellow">PAUSE</button>
+            <button id="restartBtn" class="btn btn-red">RESTART</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
